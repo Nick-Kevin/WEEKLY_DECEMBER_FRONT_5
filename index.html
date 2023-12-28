@@ -5,9 +5,36 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      #preloader {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: darkred;
+        color: white;
+        font-family: poppins, roboto, Jost, Arial, Helvetica, sans-serif;
+      }
+
+      #preloader h3 {
+        margin-top: 16px;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div id="preloader">
+        <img src="./src/assets/loaders/ball-triangle.svg" alt="ball triangle">
+        <h3>Loading..</h3>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
