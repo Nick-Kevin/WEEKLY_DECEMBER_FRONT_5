@@ -10,10 +10,10 @@ function ReactReveal ({ children }) {
 
   useEffect(() => {
     const onWindScroll = () => {
-      const element = ref.current
+      const element = ref.current      
       if (element) {
         const { top } = element.getBoundingClientRect()
-        const isVisible = top < window.innerHeight
+        const isVisible = top < window.innerHeight - element.clientHeight && top > 0
         setIsVisible(isVisible)
       }
     }
