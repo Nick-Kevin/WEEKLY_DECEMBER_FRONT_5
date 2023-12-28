@@ -3,6 +3,42 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import RevealOnScroll from './components/animations/RevealOnScroll'
+import { Bounce } from 'react-reveal'
+function ReactReveal ({ children }) {
+  const [isVisible, setIsVisible] = useState(false)
+  const ref = useRef(null)
+
+  useEffect(() => {
+    const onWindScroll = () => {
+      const element = ref.current
+      if (element) {
+        const { top } = element.getBoundingClientRect()
+        const isVisible = top < window.innerHeight
+        setIsVisible(isVisible)
+      }
+    }
+
+    window.addEventListener('scroll', onWindScroll)
+    return () => {
+      window.removeEventListener('scroll', onWindScroll)
+    }
+  })
+
+  return (
+    <div ref={ref}>
+      {
+        isVisible ?
+        (
+          <>
+            <Bounce left>
+              {children}
+            </Bounce>
+          </>
+        ) : ''
+      }
+    </div>
+  )
+}
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,8 +53,10 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <RevealOnScroll>
+      <ReactReveal>
         <h1>Vite + React</h1>
+      </ReactReveal>
+      <RevealOnScroll>        
         <div className="card">
           <button onClick={() => setCount((count) => count + 1)}>
             count is {count}
