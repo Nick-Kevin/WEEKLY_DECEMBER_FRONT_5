@@ -31,7 +31,7 @@ function App() {
           Click on the Vite and React logos to learn more
         </p>
       </RevealOnScroll>
-      <div className='h-40'>
+      <div className='h-96'>
       </div>   
     </>
   )
