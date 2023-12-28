@@ -4,12 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import SetElementOnScroll from './components/animations/SetElementOnScroll'
 import { Fade, Slide } from 'react-reveal'
+import StickyNavbar from './components/sections/header/StickyNavbar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <StickyNavbar/>
       <div className='mb-[200vh]'>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
