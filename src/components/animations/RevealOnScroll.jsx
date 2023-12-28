@@ -20,8 +20,8 @@ function RevealOnScroll ({ children }) {
       }
     }, [])
   
-    const classes = `transition-opacity duration-1000
-      ${ isVisible ? 'opacity-100' : 'opacity-0' } 
+    const classes = `transition-opacity duration-1000 reveal
+      ${ isVisible ? 'opacity-100 active' : 'opacity-0' } 
     `
   
     return (
