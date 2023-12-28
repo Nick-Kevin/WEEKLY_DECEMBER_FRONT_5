@@ -70,3 +70,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.reveal {
+  position: relative;
+  transform: translateY(250px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
