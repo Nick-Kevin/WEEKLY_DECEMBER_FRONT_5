@@ -9,7 +9,7 @@ function RevealOnScroll ({ children }) {
         const element = ref.current
         if (element) {
           const { top } = element.getBoundingClientRect()
-          const isVisible = top < window.innerHeight - element.clientHeight && top > 0
+          const isVisible = top < window.innerHeight && top > 0
           setIsVisible(isVisible)
         }
       }
