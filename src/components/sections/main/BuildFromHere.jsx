@@ -29,7 +29,7 @@ function BuildFromHere () {
                 </div>
                 <div
                     className="mx-auto w-[2px] md:w-[3px] h-full"
-                    style={{background: 'linear-gradient(#7C72FF 30%, transparent)'}}
+                    style={{background: 'linear-gradient(#7C72FF, #2DA44E 80%, #3FB950)'}}
                 >
                 </div>
             </div>
