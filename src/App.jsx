@@ -1,51 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import SetElementOnScroll from './components/animations/SetElementOnScroll'
-import { Fade, Slide } from 'react-reveal'
 import StickyNavbar2 from './components/sections/header/StickyNavbar2'
+import illustrations from './assets/images/hero-desktop-a38b0fd77b6c.webp'
+import illustrationsMobile from './assets/images/hero-mobile-7163f4f5de41.webp'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <StickyNavbar2/>
-      <div className='mb-[200vh] mt-20'>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>      
+      <div className='relative z-0 top-0 right-0'>
+        <img
+          src={illustrations}
+          className='absolute top-0 left-[67%] hidden sm:block'
+          style={{width:'min(1118px, max(100vh, 100vw))'}}
+          alt="hero"
+        />
+        <img
+          src={illustrationsMobile}
+          className='absolute top-0 w-full block sm:hidden'
+          alt="hero"
+        />
       </div>
-      <SetElementOnScroll>
-          <h1>
-            <Fade left>
-              Vite + React
-            </Fade>
-          </h1>
-      </SetElementOnScroll>
-      <div className='h-[200vh]'>
-      </div> 
-      <SetElementOnScroll>        
-        <Slide bottom>
-          <div className="card">
-            <button onClick={() => setCount((count) => count + 1)}>
-              count is {count}
-            </button>
-            <p>
-              Edit <code>src/App.jsx</code> and save to test HMR
-            </p>
-          </div>
-          <p className="read-the-docs">
-            Click on the Vite and React logos to learn more
-          </p>
-        </Slide>
-      </SetElementOnScroll>  
-      <div className='h-[200vh]'>
-      </div>    
+      <StickyNavbar2/>  
     </>
   )
 }

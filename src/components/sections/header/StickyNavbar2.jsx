@@ -53,7 +53,7 @@ export default function StickyNavbar2() {
   );
  
   return (
-    <Navbar className="bg-transparent px-0 py-4 lg:py-5">
+    <Navbar className="bg-transparent relative z-50 px-0 py-4 lg:py-5">
       <div className="flex items-center justify-between mx-4 sm:mx-11 lg:mx-4 text-blue-gray-900">
         <div className="flex items-center lg:hidden gap-x-1">
           <Button
