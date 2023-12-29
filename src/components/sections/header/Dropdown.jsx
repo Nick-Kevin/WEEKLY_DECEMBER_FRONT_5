@@ -5,12 +5,15 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Dropdown() {
+export default function Dropdown(props) {
   return (
-    <Menu as="div" className="relative w-full inline-block text-left">
+    <Menu as="div" className="relative w-full pt-5 inline-block text-left">
       <div>
-        <Menu.Button className="inline-flex w-full py-1 px-0 lg:w-28 text-black none-border no-padding-left gap-x-1.5 rounded-md bg-transparent">
-          More
+        <Menu.Button className="inline-flex text-xl text-slate-900 font-semibold justify-between items-center w-full py-1 pl-8 pr-14 lg:w-28 text-black none-border no-padding-left gap-x-1.5 rounded-md bg-transparent">
+          {props.label}
+          <svg opacity="0.5" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon rotate-[-90deg] octicon-chevron-down HeaderMenu-icon ml-1">
+              <path d="M12.78 5.22a.749.749 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.06 0L3.22 6.28a.749.749 0 1 1 1.06-1.06L8 8.939l3.72-3.719a.749.749 0 0 1 1.06 0Z"></path>
+          </svg>
         </Menu.Button>
       </div>
 
@@ -34,7 +37,7 @@ export default function Dropdown() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Account settings
+                  {props.item1}
                 </a>
               )}
             </Menu.Item>
@@ -47,7 +50,7 @@ export default function Dropdown() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  Support
+                  {props.item2}
                 </a>
               )}
             </Menu.Item>
@@ -60,7 +63,7 @@ export default function Dropdown() {
                     'block px-4 py-2 text-sm'
                   )}
                 >
-                  License
+                  {props.item3}
                 </a>
               )}
             </Menu.Item>
