@@ -35,7 +35,7 @@ function BuildFromHere () {
                 <p className="text-xl md:text-2xl text-slate-500 second-font mb-4 md:mb-24">
                     The world’s leading AI-powered developer platform.
                 </p>
-                <div className="flex flex-col md:flex-row">
+                <div className="flex flex-col md:flex-row mb-4 md:mb-24">
                     <div className="flex flex-col md:flex-row gap-y-4 md:w-7/12 lg:w-5/12">
                         <input
                             placeholder="Email adress"
@@ -54,6 +54,9 @@ function BuildFromHere () {
                         </svg>
                     </button>
                 </div>
+                <p className="text-slate-500 text-base w-10/12 md:w-full md:text-xl">
+                    Trusted by the world’s leading organizations ↘︎
+                </p>
             </div>
         </div>
     )
