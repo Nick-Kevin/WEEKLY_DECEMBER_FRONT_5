@@ -15,6 +15,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --color-btn-counter-bg: #30363d;
+  --color-header-search-bg: #545b6b;
 }
 
 a {
@@ -37,6 +38,10 @@ body {
 
 .bg-dark {
   background-color: var(--color-btn-counter-bg);
+}
+
+.bg-header-search {
+  background-color: var(--color-header-search-bg);
 }
 
 h1 {

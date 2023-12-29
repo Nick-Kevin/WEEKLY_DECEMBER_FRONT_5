@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import Dropdown from "./Dropdown";
+import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
  
 export default function StickyNavbar2() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -109,6 +110,21 @@ export default function StickyNavbar2() {
       <MobileNav open={openNav}>
         <div className="fixed z-50 container bg-white ml-5 rounded-tl-md rounded-bl-md mx-auto">
           {navList}
+          <div className="ml-8 mr-10 mt-20 mb-4">
+            <button className="w-full flex justify-between rounded-md p-2 bg-header-search">
+                <div className="flex">
+                  <MagnifyingGlassIcon className="w-4 opacity-20" />
+                  <input
+                    type="text"
+                    defaultValue="Search or jump to..."
+                    className="bg-transparent ml-2 focus:outline-none text-slate-300 text-sm focus:!border-none"
+                  />
+                </div>
+                <h6 className="text-white opacity-20 px-2 rounded-[4px] text-xs leading-normal">
+                  /
+                </h6>
+            </button>
+          </div>
           <div className="ml-8 mr-10">
             <button className="bg-dark py-2 rounded-md font-semibold mb-10 w-full">
               Sign in
