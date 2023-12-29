@@ -1,6 +1,13 @@
+import threeM from '../../../assets/images/3m-0151c2fda0ce.svg'
+import kpmg from '../../../assets/images/kpmg-c249f20c5173.svg'
+import mercedes from '../../../assets/images/mercedes-fcf97d2d6ec4.svg'
+import sap from '../../../assets/images/sap-96248a56d312.svg'
+import pAndG from '../../../assets/images/pg-f1f19955c4e4.svg'
+import telus from '../../../assets/images/telus-df0c2109df99.svg'
+
 function BuildFromHere () {
     return (
-        <div className="flex relative z-20 mt-12 sm:mt-20 lg:mt-[8.2rem] sm:mx-0 lg:mx-4">
+        <div className="flex relative z-20 mt-12 sm:mt-20 lg:mt-[8.2rem] sm:ml-0 lg:ml-4">
             <div className="flex flex-col mt-32 sm:mt-0 w-1/12">
                 <div className="mx-auto p-1 rounded-xl border-2 border-slate-500"></div>
                 <div
@@ -26,7 +33,7 @@ function BuildFromHere () {
                 >
                 </div>
             </div>
-            <div className="mt-24 w-full sm:mt-0 ml-3 sm:ml-0">
+            <div className="mt-24 w-full sm:mt-0 ml-3 sm:ml-0 md:ml-4 lg:ml-0">
                 <h1 className="text-white text-6xl md:text-8xl mb-2 font-semibold">
                     <span>
                         Let's build from here
@@ -35,7 +42,7 @@ function BuildFromHere () {
                 <p className="text-xl md:text-2xl text-slate-500 second-font mb-4 md:mb-24">
                     The world’s leading AI-powered developer platform.
                 </p>
-                <div className="flex flex-col md:flex-row mb-4 md:mb-24">
+                <div className="flex flex-col md:flex-row mb-14 md:mb-24">
                     <div className="flex flex-col md:flex-row gap-y-4 md:w-7/12 lg:w-5/12">
                         <input
                             placeholder="Email adress"
@@ -54,9 +61,17 @@ function BuildFromHere () {
                         </svg>
                     </button>
                 </div>
-                <p className="text-slate-500 text-base w-10/12 md:w-full md:text-xl">
+                <p className="text-slate-500 text-base mb-6 w-10/12 md:w-full md:text-xl">
                     Trusted by the world’s leading organizations ↘︎
                 </p>
+                <div className='flex flex-wrap justify-center gap-x-[15%] sm:gap-x-[8%] md:gap-x-0 gap-y-7 md:justify-between items-center w-full lg:w-11/12 mb-28'>
+                    <img src={threeM} alt="3M" />
+                    <img src={kpmg} alt="KPMG" />
+                    <img src={mercedes} className='w-40 h-10' alt="Mercedes Benz" />
+                    <img src={sap} alt="SAP" />
+                    <img src={pAndG} alt="p&g" />
+                    <img src={telus} alt="telus" />
+                </div>
             </div>
         </div>
     )
