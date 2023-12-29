@@ -2,6 +2,7 @@ import './App.css'
 import StickyNavbar2 from './components/sections/header/StickyNavbar2'
 import illustrations from './assets/images/hero-desktop-a38b0fd77b6c.webp'
 import illustrationsMobile from './assets/images/hero-mobile-7163f4f5de41.webp'
+import BuildFromHere from './components/sections/main/BuildFromHere'
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
           alt="hero"
         />
       </div>
-      <StickyNavbar2/>  
+      <StickyNavbar2/>
+      <main className='px-4 sm:px-11 lg:px-4'>
+        <BuildFromHere/>
+      </main> 
     </>
   )
 }

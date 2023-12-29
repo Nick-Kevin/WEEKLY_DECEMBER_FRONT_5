@@ -76,3 +76,18 @@ h1 {
   transform: translateY(0);
   opacity: 1;
 }
+
+.second-font {
+  font-family: "Mona Sans","Mona Sans Fallback", poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: white;
+}
+
+.home-campaign-signup-button {
+  background:linear-gradient(180deg, rgba(183, 52, 179, 0.15) 0%, rgba(164, 46, 156, 0) 100%),#6e40c9 !important
+}
