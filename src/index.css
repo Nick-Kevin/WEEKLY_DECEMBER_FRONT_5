@@ -44,6 +44,10 @@ body {
   background-color: var(--color-header-search-bg);
 }
 
+.bg-header-search-desktop {
+  background-color: #545b6b77;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
