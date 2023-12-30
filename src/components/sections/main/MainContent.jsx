@@ -14,6 +14,8 @@ import illuCode from "../../../assets/images/illu-code-scanning-fc9dfb212aa3.png
 import illuSponsors from "../../../assets/images/illu-sponsors.png"
 import illuCodespaces from "../../../assets/images/illu-codespaces-1d2d17e8b2b7.png"
 import illuMobile from "../../../assets/images/illu-mobile-4d51d19f769e.png"
+import illuDependBot from "../../../assets/images/illu-dependabot-d98c73cc6724.png"
+import illuSecretToken from "../../../assets/images/illu-secret-scanning-2-88fb429376d6.png"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -144,6 +146,24 @@ function MainContent () {
                 imgSrc={illuCode}
                 imgAlt="code illustrations"               
             />
+            <div className="grid md:grid-cols-2 md:gap-x-8 gap-y-4 md:gap-y-0 mt-4 md:mt-8">
+                <FirstCard
+                    paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
+                    description1="Dependabot"
+                    description2="makes it easy to find and fix vulnerable dependencies in your supply chain."
+                    link="Explore Dependabot" 
+                    imgSrc={illuDependBot}
+                    imgAlt="depent bot illustrations"               
+                />
+                <FirstCard
+                    paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
+                    description1="Secret scanning"
+                    description2="automatically looks for partner patterns and prevents fraudulent use of accidentally committed secrets."
+                    link="Read about secret scanning" 
+                    imgSrc={illuSecretToken}
+                    imgAlt="secret token illustrations"               
+                />
+            </div>
             <HeadSection
                 octicon={collaborationOcticon()}
                 octiconBgColor="var(--mktg-accent-third)"
@@ -175,6 +195,24 @@ function MainContent () {
                 textColor="text-accent-third"
                 hiddeSecondLink
             />
+            <div className="grid md:grid-cols-2 md:gap-x-8 gap-y-4 md:gap-y-0 mt-4 md:mt-8">
+                <FirstCard
+                    paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
+                    description1="GitHub Codespaces"
+                    description2="offers a complete dev environment in seconds. Code, build, test, and open pull requests from any repo."
+                    link="Check out GitHub Codespaces" 
+                    imgSrc={illuCodespaces}
+                    imgAlt="codespaces illustrations"               
+                />
+                <FirstCard
+                    paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
+                    description1="GitHub Moblie"
+                    description2="fits your projects in your pocket, so you never miss a beat while on the go."
+                    link="Download GitHub Mobile" 
+                    imgSrc={illuMobile}
+                    imgAlt="mobile illustrations"               
+                />
+            </div>
             <FirstCard
                 flexDirection="md:flex-row"
                 paddingClass="mt-10 md:pt-0 lg:w-6/12 lg:pt-5 pb-9 sm:pb-12 md:pb-16"
