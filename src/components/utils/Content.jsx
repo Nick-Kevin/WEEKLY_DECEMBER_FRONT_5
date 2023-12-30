@@ -1,9 +1,8 @@
-import branchProductivity from '../../assets/images/git-branch-productivity-c304b83d09c7.svg'
 import RevealOnScroll from '../animations/RevealOnScroll'
 import SetElementOnScroll from '../animations/SetElementOnScroll'
 import { Fade } from 'react-reveal'
 
-function Content () {
+function Content (props) {
     const arrowRight = (size) => {
         return (
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -18,11 +17,11 @@ function Content () {
             <div className="w-1/12 relative">
                 <div
                     className="mx-auto w-[2px] md:w-[3px] h-full"
-                    style={{background: `linear-gradient(transparent, rgb(63, 185, 80), rgb(63, 185, 80), transparent)`}}
+                    style={{background: `${props.verticalLineColor}`}}
                 >
                 </div>
                 <img
-                    src={branchProductivity}
+                    src={props.branchSrc}
                     className='absolute bottom-4 hidden md:block'
                     style={{left: 'calc(50% - 2px)'}}
                     alt=""
@@ -33,13 +32,11 @@ function Content () {
                     <RevealOnScroll reveal="revealRight">
                             <div className='md:pr-4 my-5 sm:my-7 md:my-8 '>
                                 <h2 className='text-xl lg:text-[1.6rem] text-mona mb-6 text-slate-500'>
-                                    <span className='text-white'>GitHub Copilot </span>
-                                    empowers developers to complete
-                                    tasks 55% faster with contextualized AI
-                                    coding assistance across workflows.
+                                    <span className='text-white'>{props.description1} </span>
+                                    {props.description2}
                                 </h2>
                                 <a href="/" className='text-white mona-medium text-base lg:text-xl hover:underline hover:text-white'>
-                                    Explore GitHub Copilot
+                                    {props.firstLink}
                                     {arrowRight("24")}
                                 </a>
                             </div>
@@ -49,16 +46,27 @@ function Content () {
                     <SetElementOnScroll>
                         <Fade bottom>
                             <div>
-                                <span className='mona-semibold text-xs py-1 px-2 text-accent-primary border-primary rounded-xl'>
+                                <span className={`${props.textColor} mona-semibold text-xs py-1 px-2 border-primary rounded-xl`}>
                                     Did you know ?
                                 </span>
                             </div>
-                            <h3 className='mona-medium text-accent-primary text-3xl sm:text-4xl md:text-5xl lg:text-[4.2rem] leading-tight mt-4 lg:mt-6'>22% increase</h3>
-                            <p className='text-white mona-medium text-xl lg:text-2xl mt-2 md:mt-6 mb-5 md:mb-6'>in developer productivity after three years with GitHub</p>
-                            <a href="/" className='text-white mona-medium text-base md:text-xl hover:underline hover:text-white'>
-                                Read the report
-                                {arrowRight("16")}
-                            </a>
+                            <h3 className={`${props.textColor} mona-medium text-3xl sm:text-4xl md:text-5xl lg:text-[4.2rem] leading-tight mt-4 lg:mt-6`}>
+                                {props.title}
+                            </h3>
+                            <p className='text-white mona-medium text-xl lg:text-2xl mt-2 md:mt-6 mb-5 md:mb-6'>
+                                {props.subtitle}
+                            </p>
+                            {
+                                props.hiddeSecondLink ?
+                                    ''
+                                :
+                                    (
+                                        <a href="/" className='text-white mona-medium text-base md:text-xl hover:underline hover:text-white'>
+                                            {props.secondLink}
+                                            {arrowRight("16")}
+                                        </a>
+                                    )
+                            }
                         </Fade>
                     </SetElementOnScroll>
                 </div>

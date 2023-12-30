@@ -1,5 +1,6 @@
 import HeadSection from "../../utils/HeadSection"
 import Content from "../../utils/Content"
+import branchProductivity from "../../../assets/images/git-branch-productivity-c304b83d09c7.svg"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -38,7 +39,17 @@ function MainContent () {
                 description1="Accelerate innovation"
                 description2="Our AI-powered platform increases the pace of software development."
             />
-            <Content/>
+            <Content
+                verticalLineColor="linear-gradient(transparent, rgb(63, 185, 80), rgb(63, 185, 80), transparent)"
+                branchSrc={branchProductivity}
+                description1="GitHub Copilot"
+                description2="empowers developers to complete tasks 55% faster with contextualized AI coding assistance across workflows."
+                firstLink="Explore GitHub Copilot"
+                title="22% increase"
+                subtitle="in developer productivity after three years with GitHub"
+                secondLink="Read the report"
+                textColor="text-accent-primary"
+            />
             <HeadSection
                 octicon={securityOcticon()}
                 octiconBgColor="var(--mktg-accent-secondary)"
