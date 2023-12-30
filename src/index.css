@@ -88,21 +88,25 @@ h1 {
   }
 }
 
-.revealY {
+.revealY, .revealRight, .revealBottom {
   position: relative;
-  transform: translateY(250px);
   opacity: 0;
   transition: 2s all ease;
+}
+
+.revealY {
+  transform: translateY(250px);
 }
 
 .revealRight {
-  position: relative;
   transform: translateX(100px);
-  opacity: 0;
-  transition: 2s all ease;
 }
 
-.revealY.active, .revealRight.active {
+.revealBottom {
+ transform: translateY(100px);
+}
+
+.revealY.active, .revealRight.active, .revealBottom.active {
   transform: translate(0);
   opacity: 1;
 }

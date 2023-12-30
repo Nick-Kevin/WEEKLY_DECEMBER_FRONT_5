@@ -53,7 +53,7 @@ export default function StickyNavbar2() {
   );
  
   return (
-    <Navbar className="bg-transparent relative z-50 px-0 py-4 lg:py-5">
+    <Navbar className="bg-transparent border-[0px] relative z-50 px-0 py-4 lg:py-5">
       <div className="flex items-center justify-between mx-4 sm:mx-11 lg:mx-4 text-blue-gray-900">
         <div className="flex items-center lg:items-centergap-x-1">
           <Button
@@ -92,7 +92,7 @@ export default function StickyNavbar2() {
         </div>  
           <IconButton
             variant="text"
-            className="w-6 text-inherit !flex !border-none active:!border-none focus:border-none hover:!border-none ml-4 sm:ml-12 md:ml-16 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:!hidden"
+            className="w-6 text-inherit pt-2 !flex !border-none active:!border-none focus:border-none hover:!border-none ml-4 sm:ml-12 md:ml-16 hover:bg-transparent focus:bg-transparent active:bg-transparent lg:!hidden"
             ripple={false}
             onClick={() => setOpenNav(!openNav)}
           >
@@ -114,7 +114,7 @@ export default function StickyNavbar2() {
             ) : (
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-6 w-10"
                 fill="none"
                 stroke="white"
                 strokeWidth={2}
