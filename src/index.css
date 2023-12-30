@@ -17,6 +17,11 @@
   src: url("./assets/font/TTF/Mona-Sans-Medium.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Mona Sans Semibold";
+  src: url("./assets/font/TTF/Mona-Sans-SemiBold.ttf") format("truetype");
+}
+
 :root {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
   line-height: 1.5;
@@ -95,6 +100,10 @@ h1 {
   opacity: 1;
 }
 
+.mona-semibold {
+  font-family: "Mona Sans Semibold";
+}
+
 .mona-medium {
   font-family: "Mona Sans Medium","Mona Sans Fallback", poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
@@ -134,4 +143,8 @@ h1 {
 
 .text-accent-third {
   color: var(--mktg-accent-third);
+}
+
+.border-primary {
+  border: 1px solid var(--mktg-accent-primary);
 }
