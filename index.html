@@ -30,12 +30,18 @@
     </style>
   </head>
   <body>
-    <div id="root">
-      <div id="preloader">
-        <img src="./src/assets/loaders/ball-triangle.svg" alt="ball triangle">
-        <h3>Loading..</h3>
-      </div>
+    <div id="preloader">
+      <img src="./src/assets/loaders/ball-triangle.svg" alt="ball triangle">
+      <h3>Loading..</h3>
     </div>
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const preloader = document.getElementById('preloader')
+
+      window.addEventListener('DOMContentLoaded', () => {
+        preloader.style.display = 'none'
+      })
+    </script>
   </body>
 </html>
