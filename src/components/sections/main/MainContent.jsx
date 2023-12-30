@@ -10,6 +10,7 @@ import illuSecuMobile from "../../../assets/images/illustration-security-mobile.
 import illuPlan from "../../../assets/images/issues-plan-2-46d1ce1d4519.png"
 import FirstCard from "../../utils/FirstCard"
 import illuActions from "../../../assets/images/illu-actions-2-c5178134f381.png"
+import illuCode from "../../../assets/images/illu-code-scanning-fc9dfb212aa3.png"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -70,6 +71,7 @@ function MainContent () {
                 textColor="text-accent-primary"
             />
             <FirstCard
+                paddingClass="mt-10 md:pt-0 lg:pt-20 pb-12 sm:pb-20 md:pb-16"
                 description1="GitHub Actions"
                 description2="automates your build, test, and deployment workflow with simple and secure CI/CD."
                 link="Discover Github Actions" 
@@ -110,6 +112,14 @@ function MainContent () {
                 didYouKnowClass="border-secondary text-accent-secondary"
                 textColor="text-accent-secondary"
                 hiddeSecondLink
+            />
+            <FirstCard
+                paddingClass="mt-10 md:pt-0 md:w-10/12 lg:pt-5 pb-9 sm:pb-12 md:pb-16"
+                description1="Code scanning"
+                description2="is our code analysis tool that helps you remediate issues in your code."
+                link="Download the latest SAST ebook" 
+                imgSrc={illuCode}
+                imgAlt="code illustrations"               
             />
             <HeadSection
                 octicon={collaborationOcticon()}

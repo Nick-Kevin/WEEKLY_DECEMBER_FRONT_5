@@ -11,7 +11,7 @@ function FirstCard (props) {
 
     return (
         <div className="flex flex-col md:flex-row bg-subtle rounded-xl border-[1px] border-slate-800">
-            <div className="flex flex-col justify-between px-8 md:px-14 mt-10 md:pt-0 lg:pt-20 pb-12 sm:pb-20 md:pb-16 lg:pb-20">
+            <div className={`${ props.paddingClass } flex flex-col justify-between px-8 md:px-9 lg:px-14 lg:pb-20`}>
                 <h2 className='text-xl lg:text-[1.6rem] md:leading-snug text-mona mb-6 text-slate-500'>
                     <span className='text-white'>{props.description1} </span>
                     {props.description2}
