@@ -34,9 +34,9 @@ function BuildFromHere () {
                 </div>
             </div>
             <div className="mt-24 w-full sm:mt-0 ml-3 sm:ml-0 md:ml-4 lg:ml-0">
-                <h1 className="text-white text-6xl md:text-8xl mb-2 font-semibold">
+                <h1 className="text-white text-6xl md:text-8xl mb-2 font-semibold" style={{wordBreak: 'keep-all', fontFeatureSettings: 'unset'}}>
                     <span>
-                        Let's build from here
+                        Let's build from her<span className='block sm:inline'>e</span>
                     </span>
                 </h1>
                 <p className="text-xl md:text-2xl mona-regular text-slate-500 second-font mb-4 md:mb-24">
