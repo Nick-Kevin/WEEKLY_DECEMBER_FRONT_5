@@ -5,6 +5,7 @@ import illustrationsMobile from "./assets/images/hero-mobile-7163f4f5de41.webp";
 import BuildFromHere from "./components/sections/main/BuildFromHere";
 import MainContent from "./components/sections/main/MainContent";
 import Footer from "./components/sections/footer/Footer";
+import MyGlobe from "./components/sections/main/Globe";
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
       <StickyNavbar2 />
       <main className="px-4 sm:px-11 lg:px-4">
         <BuildFromHere />
-        <MainContent />
+        <MainContent />        
       </main>
+      <MyGlobe />
       <Footer />
     </>
   );
