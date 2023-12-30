@@ -6,6 +6,8 @@ import branchSecurity from "../../../assets/images/git-branch-security-2-f6a7999
 import branchCollaboration from "../../../assets/images/git-branch-collaboration-2-e46b1fb1d363.svg"
 import illuCopilot from "../../../assets/images/illu-copilot-editor-6474457a5b19.png"
 import illuSecurity from "../../../assets/images/illustrations-security.png"
+import illuSecuMobile from "../../../assets/images/illustration-security-mobile.png"
+import illuPlan from "../../../assets/images/issues-plan-2-46d1ce1d4519.png"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -78,7 +80,12 @@ function MainContent () {
             <RevealOnScroll reveal="revealBottom">
                 <img
                     src={illuSecurity}
-                    className="w-full"
+                    className="w-full hidden md:block"
+                    alt="copilot security"
+                />
+                <img
+                    src={illuSecuMobile}
+                    className="w-full block md:hidden"
                     alt="copilot security"
                 />
             </RevealOnScroll>
@@ -105,6 +112,14 @@ function MainContent () {
                 description1="Supercharge collaboration"
                 description2=" GitHub helps your teams work more efficiently together. "
             />
+            <RevealOnScroll reveal="revealBottom">
+                <img
+                    src={illuPlan}
+                    className="w-full rounded-lg md:rounded-xl"
+                    style={{border: '1px solid #FFFFFF22'}}
+                    alt="copilot illustration"
+                />
+            </RevealOnScroll>
             <Content
                 verticalLineColor="linear-gradient(transparent, #F778BA, #F778BA, transparent)"
                 branchSrc={branchCollaboration}
