@@ -8,6 +8,8 @@ import illuCopilot from "../../../assets/images/illu-copilot-editor-6474457a5b19
 import illuSecurity from "../../../assets/images/illustrations-security.png"
 import illuSecuMobile from "../../../assets/images/illustration-security-mobile.png"
 import illuPlan from "../../../assets/images/issues-plan-2-46d1ce1d4519.png"
+import FirstCard from "../../utils/FirstCard"
+import illuActions from "../../../assets/images/illu-actions-2-c5178134f381.png"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -66,6 +68,13 @@ function MainContent () {
                 secondLink="Read the report"
                 didYouKnowClass="border-primary text-accent-primary"
                 textColor="text-accent-primary"
+            />
+            <FirstCard
+                description1="GitHub Actions"
+                description2="automates your build, test, and deployment workflow with simple and secure CI/CD."
+                link="Discover Github Actions" 
+                imgSrc={illuActions}
+                imgAlt="actions illustrations"               
             />
             <HeadSection
                 octicon={securityOcticon()}

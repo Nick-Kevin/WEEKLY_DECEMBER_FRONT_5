@@ -12,6 +12,7 @@ function Content (props) {
             </svg>
         )
     }
+    
     return (
         <div className="flex sm:ml-0 lg:ml-4 h-[609px] sm:h-[613px] md:h-[697px] lg:h-[737px]">
             <div className="w-1/12 relative">

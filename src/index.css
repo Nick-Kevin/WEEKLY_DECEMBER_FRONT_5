@@ -40,6 +40,7 @@
   --mktg-accent-primary: #3FB950;
   --mktg-accent-secondary: #33B3AE;
   --mktg-accent-third: #F778BA;
+  --color-bg-subtle: #161B22;
 }
 
 a {
@@ -69,6 +70,10 @@ body {
 
 .bg-header-search-desktop {
   background-color: #545b6b77;
+}
+
+.bg-subtle {
+  background-color: var(--color-bg-subtle);
 }
 
 h1 {
