@@ -5,6 +5,7 @@ import branchProductivity from "../../../assets/images/git-branch-productivity-c
 import branchSecurity from "../../../assets/images/git-branch-security-2-f6a799957581.svg"
 import branchCollaboration from "../../../assets/images/git-branch-collaboration-2-e46b1fb1d363.svg"
 import illuCopilot from "../../../assets/images/illu-copilot-editor-6474457a5b19.png"
+import illuSecurity from "../../../assets/images/illustrations-security.png"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -74,6 +75,13 @@ function MainContent () {
                 description1="Empower developers"
                 description2="With GitHub, you can secure code in minutes."
             />
+            <RevealOnScroll reveal="revealBottom">
+                <img
+                    src={illuSecurity}
+                    className="w-full"
+                    alt="copilot security"
+                />
+            </RevealOnScroll>
             <Content
                 verticalLineColor="linear-gradient(transparent, rgb(51, 179, 174), rgb(51, 179, 174), transparent)"
                 branchSrc={branchSecurity}
