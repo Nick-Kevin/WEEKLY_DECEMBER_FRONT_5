@@ -6,7 +6,19 @@ function HeadSection (props) {
     return (
         <div className="flex sm:ml-0 lg:ml-4">
             <div className="flex flex-col w-1/12">
-                <div className="mx-auto my-8 md:my-3">
+                {
+                    props.hiddeFirstVerticalLine ?
+                        ''
+                    :
+                        (
+                            <div
+                                className="mx-auto w-[2px] md:w-[3px] h-80"
+                                style={{background: `${props.verticalLineColor}`}}
+                            >
+                            </div>
+                        )
+                }
+                <div className="mx-auto my-8  md:my-3">
                     <div class="relative inline-block z-1">
                         <RevealOnScroll>
                             {props.octicon}
@@ -24,7 +36,7 @@ function HeadSection (props) {
                 >
                 </div>
             </div>
-            <div className={`${props.colWidthOfTheSecondDiv} h-[336px] sm:h-[208px] md:h-[304px] lg:h-[328px] w-11/12 ml-3 sm:ml-0 md:ml-4 lg:ml-0 mona-medium`}>
+            <div className={`${props.colWidthOfTheSecondDiv} h-[336px] sm:h-[208px] ${ props.hiddeFirstVerticalLine ? 'lg:h-[328px] md:h-[304px]' : 'pt-[8.7rem] md:pt-[10.5rem] lg:pt-[11rem] md:h-[450px] lg:h-[480px]' } w-11/12 ml-3 sm:ml-0 md:ml-4 lg:ml-0 mona-medium`}>
                         <h2 className="text-white text-xl md:text-2xl mt-8 md:mt-2">
                             <SetElementOnScroll>
                                 <Fade left>

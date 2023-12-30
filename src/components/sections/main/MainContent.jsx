@@ -55,6 +55,7 @@ function MainContent () {
                 titleClassColor="text-accent-primary"
                 description1="Accelerate innovation"
                 description2="Our AI-powered platform increases the pace of software development."
+                hiddeFirstVerticalLine
             />
             <RevealOnScroll reveal="revealBottom">
                 <img
