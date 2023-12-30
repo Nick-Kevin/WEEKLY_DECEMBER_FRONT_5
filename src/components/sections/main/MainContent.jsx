@@ -85,19 +85,19 @@ function MainContent () {
             <div className="grid md:grid-cols-2 md:gap-x-8 gap-y-4 md:gap-y-0 mt-4 md:mt-8">
                 <FirstCard
                     paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
-                    description1="GitHub Actions"
-                    description2="automates your build, test, and deployment workflow with simple and secure CI/CD."
-                    link="Discover Github Actions" 
+                    description1="GitHub Codespaces"
+                    description2="offers a complete dev environment in seconds. Code, build, test, and open pull requests from any repo."
+                    link="Check out GitHub Codespaces" 
                     imgSrc={illuCodespaces}
-                    imgAlt="actions illustrations"               
+                    imgAlt="codespaces illustrations"               
                 />
                 <FirstCard
                     paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
-                    description1="GitHub Actions"
-                    description2="automates your build, test, and deployment workflow with simple and secure CI/CD."
-                    link="Discover Github Actions" 
+                    description1="GitHub Moblie"
+                    description2="fits your projects in your pocket, so you never miss a beat while on the go."
+                    link="Download GitHub Mobile" 
                     imgSrc={illuMobile}
-                    imgAlt="actions illustrations"               
+                    imgAlt="mobile illustrations"               
                 />
             </div>
             <HeadSection
