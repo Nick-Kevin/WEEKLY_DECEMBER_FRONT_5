@@ -11,7 +11,7 @@ function Footer() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-10 lg:px-4">
         <div className="flex flex-wrap py-5 mb-5">
-          <div className="grid-cols-12 lg:grid-cols-4  mb-5">
+          <div className="grid-cols-12 lg:grid-cols-4 w-full lg:w-4/12 mb-5">
             <a
               href="/"
               data-analytics-event='{"category":"Footer","action":"go to home","label":"text:home"}'
@@ -33,17 +33,17 @@ function Footer() {
 
             <div>
               <h2
-                className="h5 mt-4 text-slate-500"
+                className="h5 mt-4 text-white text-sm font-bold"
                 id="subscribe-to-newsletter"
               >
                 Subscribe to our developer newsletter
               </h2>
-              <p className="f5 text-slate-500 mb-3">
+              <p className="f5 text-slate-500 mb-7 text-sm">
                 Get tips, technical guides, and best practices. Once a month.
                 Right in your inbox.
               </p>
               <a
-                className="py-4 px-6 mb-4 text-white"
+                className="py-3 px-6 mb-4 text-white border-[1px] border-slate-500 hover:text-white hover:border-2 hover:border-white rounded-lg"
                 data-analytics-event='{"category":"Subscribe","action":"click to Subscribe","label":"ref_cta:Subscribe;"}'
                 href="https://resources.github.com/newsletter/"
               >
@@ -51,13 +51,14 @@ function Footer() {
               </a>
             </div>
           </div>
-
-          <div className="grid-cols-6 sm:grid-cols-3 lg:grid-cols-2 mb-6 md:mb-2 pr-3 lg:pr-0  lg:pl-4">
+        
+        <div className="grid grid-cols-2 w-full sm:w-6/12 lg:w-4/12">
+          <div className="grid-cols-6 text-sm sm:grid-cols-3 lg:grid-cols-2 mb-6 md:mb-2 mt-12 lg:mt-0 pr-3 lg:pr-0  lg:pl-4">
             <h2 className="h5 mb-3 text-mono text-slate-500 text-normal">
               Product
             </h2>
 
-            <ul className="style-none text-slate-500 f5">
+            <ul className="style-none text-slate-300 f5">
               <li className="lh-condensed mb-3 ">
                 <a
                   className="Link--secondary"
@@ -142,7 +143,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="grid-cols-6 sm:grid-cols-3 lg:grid-cols-2 mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
+          <div className="text-sm grid-cols-6 sm:grid-cols-3 lg:grid-cols-2 mt-12 lg:mt-0 mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
             <h2 className="h5 mb-3 text-mono text-slate-500 text-normal">
               Platform
             </h2>
@@ -186,7 +187,9 @@ function Footer() {
               </li>
             </ul>
           </div>
+        </div>
 
+        <div className="grid grid-cols-2 w-full sm:w-6/12 lg:w-4/12 text-sm mt-5 sm:mt-12 lg:mt-0">
           <div className="grid-cols-6 sm:grid-cols-3 lg:grid-cols-2 mb-6 md:mb-2 pr-3 md:pr-0 md:pl-4">
             <h2 className="h5 mb-3 text-mono text-slate-500 text-normal">
               Support
@@ -350,10 +353,10 @@ function Footer() {
           </div>
         </div>
       </div>
-
-      <div className="color-bg-subtle">
-        <div className="max-w-7xl mx-auto p-responsive f6 py-4 sm:flex justify-between flex-row-reverse items-center">
-          <ul className="style-none flex items-center mb-3 sm:mb-0 lh-condensed-ultra">
+    </div>
+      <div className="bg-subtle text-xs px-4 sm:px-8 lg:px-0">
+        <div className="max-w-7xl mx-auto p-responsive f6 py-6 sm:flex justify-between flex-row-reverse items-center">
+          <ul className="style-none flex items-center lg:gap-x-1 lg:mr-5 mb-3 sm:mb-0 lh-condensed-ultra">
             <li className="mr-3">
               <a
                 href="https://x.com/github"
@@ -482,7 +485,7 @@ function Footer() {
             </li>
           </ul>
 
-          <ul className="list-none flex flex-wrap color-fg-muted">
+          <ul className="list-none flex flex-wrap text-slate-500 mt-5 sm:mt-0 gap-y-1 lg:gap-y-0">
             <li className="mx-2">© 2023 GitHub, Inc.</li>
 
             <li className="mx-2">
