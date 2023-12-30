@@ -12,6 +12,8 @@ import FirstCard from "../../utils/FirstCard"
 import illuActions from "../../../assets/images/illu-actions-2-c5178134f381.png"
 import illuCode from "../../../assets/images/illu-code-scanning-fc9dfb212aa3.png"
 import illuSponsors from "../../../assets/images/illu-sponsors.png"
+import illuCodespaces from "../../../assets/images/illu-codespaces-1d2d17e8b2b7.png"
+import illuMobile from "../../../assets/images/illu-mobile-4d51d19f769e.png"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -72,6 +74,7 @@ function MainContent () {
                 textColor="text-accent-primary"
             />
             <FirstCard
+                flexDirection="md:flex-row"
                 paddingClass="mt-10 md:pt-0 lg:pt-20 pb-12 sm:pb-20 md:pb-16"
                 description1="GitHub Actions"
                 description2="automates your build, test, and deployment workflow with simple and secure CI/CD."
@@ -79,6 +82,24 @@ function MainContent () {
                 imgSrc={illuActions}
                 imgAlt="actions illustrations"               
             />
+            <div className="grid md:grid-cols-2 md:gap-x-8 gap-y-4 md:gap-y-0 mt-4 md:mt-8">
+                <FirstCard
+                    paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
+                    description1="GitHub Actions"
+                    description2="automates your build, test, and deployment workflow with simple and secure CI/CD."
+                    link="Discover Github Actions" 
+                    imgSrc={illuCodespaces}
+                    imgAlt="actions illustrations"               
+                />
+                <FirstCard
+                    paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
+                    description1="GitHub Actions"
+                    description2="automates your build, test, and deployment workflow with simple and secure CI/CD."
+                    link="Discover Github Actions" 
+                    imgSrc={illuMobile}
+                    imgAlt="actions illustrations"               
+                />
+            </div>
             <HeadSection
                 octicon={securityOcticon()}
                 octiconBgColor="var(--mktg-accent-secondary)"
@@ -115,6 +136,7 @@ function MainContent () {
                 hiddeSecondLink
             />
             <FirstCard
+                flexDirection="md:flex-row"
                 paddingClass="mt-10 md:pt-0 md:w-10/12 lg:pt-5 pb-9 sm:pb-12 md:pb-16"
                 description1="Code scanning"
                 description2="is our code analysis tool that helps you remediate issues in your code."
@@ -154,6 +176,7 @@ function MainContent () {
                 hiddeSecondLink
             />
             <FirstCard
+                flexDirection="md:flex-row"
                 paddingClass="mt-10 md:pt-0 lg:w-6/12 lg:pt-5 pb-9 sm:pb-12 md:pb-16"
                 description1="Code Sponsors"
                 description2="lets you support your favorite open source maintainers and projects."
