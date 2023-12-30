@@ -16,6 +16,8 @@ import illuCodespaces from "../../../assets/images/illu-codespaces-1d2d17e8b2b7.
 import illuMobile from "../../../assets/images/illu-mobile-4d51d19f769e.png"
 import illuDependBot from "../../../assets/images/illu-dependabot-d98c73cc6724.png"
 import illuSecretToken from "../../../assets/images/illu-secret-scanning-2-88fb429376d6.png"
+import illuDiscu from "../../../assets/images/illu-discussions-2-b915a6dd867e.png"
+import illuPr from "../../../assets/images/illu-pull-requests-2-280cc958fc05.png"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -198,23 +200,23 @@ function MainContent () {
             <div className="grid md:grid-cols-2 md:gap-x-8 gap-y-4 md:gap-y-0 mt-4 md:mt-8">
                 <FirstCard
                     paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
-                    description1="GitHub Codespaces"
-                    description2="offers a complete dev environment in seconds. Code, build, test, and open pull requests from any repo."
-                    link="Check out GitHub Codespaces" 
-                    imgSrc={illuCodespaces}
-                    imgAlt="codespaces illustrations"               
+                    description1="GitHub Discussions"
+                    description2="creates space to ask questions and have open-ended conversations."
+                    link="Jump into GitHub Discussions" 
+                    imgSrc={illuDiscu}
+                    imgAlt="discussions illustrations"               
                 />
                 <FirstCard
                     paddingClass="mt-10 md:pt-0 lg:pt-5 pb-12 sm:pb-20 md:pb-16"
-                    description1="GitHub Moblie"
-                    description2="fits your projects in your pocket, so you never miss a beat while on the go."
-                    link="Download GitHub Mobile" 
-                    imgSrc={illuMobile}
-                    imgAlt="mobile illustrations"               
+                    description1="Pull requests"
+                    description2="allow real-time communication and collaboration about code changes."
+                    link="Check out pull requests" 
+                    imgSrc={illuPr}
+                    imgAlt="pull requet illustrations"               
                 />
             </div>
             <FirstCard
-                flexDirection="md:flex-row"
+                flexDirection="md:flex-row mt-4 md:mt-8"
                 paddingClass="mt-10 md:pt-0 lg:w-6/12 lg:pt-5 pb-9 sm:pb-12 md:pb-16"
                 description1="Code Sponsors"
                 description2="lets you support your favorite open source maintainers and projects."
