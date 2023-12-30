@@ -39,7 +39,7 @@ function BuildFromHere () {
                         Let's build from here
                     </span>
                 </h1>
-                <p className="text-xl md:text-2xl text-slate-500 second-font mb-4 md:mb-24">
+                <p className="text-xl md:text-2xl mona-regular text-slate-500 second-font mb-4 md:mb-24">
                     The world’s leading AI-powered developer platform.
                 </p>
                 <div className="flex flex-col md:flex-row mb-14 md:mb-24">
@@ -61,7 +61,7 @@ function BuildFromHere () {
                         </svg>
                     </button>
                 </div>
-                <p className="text-slate-500 text-base mb-6 w-10/12 md:w-full md:text-xl">
+                <p className="text-slate-500 mona-regular text-base mb-6 w-10/12 md:w-full md:text-xl">
                     Trusted by the world’s leading organizations ↘︎
                 </p>
                 <div className='flex flex-wrap justify-center gap-x-[15%] sm:gap-x-[8%] md:gap-x-0 gap-y-7 md:justify-between items-center w-full lg:w-11/12 mb-28'>
