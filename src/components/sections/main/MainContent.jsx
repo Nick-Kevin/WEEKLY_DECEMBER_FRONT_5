@@ -1,4 +1,5 @@
 import HeadSection from "../../utils/HeadSection"
+import Content from "../../utils/Content"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -37,6 +38,7 @@ function MainContent () {
                 description1="Accelerate innovation"
                 description2="Our AI-powered platform increases the pace of software development."
             />
+            <Content/>
             <HeadSection
                 octicon={securityOcticon()}
                 octiconBgColor="var(--mktg-accent-secondary)"
@@ -49,7 +51,7 @@ function MainContent () {
             />
             <HeadSection
                 octicon={collaborationOcticon()}
-                octiconBgColor="var(--mktg-accent-thrid)"
+                octiconBgColor="var(--mktg-accent-third)"
                 verticalLineColor="linear-gradient(rgb(247, 120, 186) 40%, transparent)"
                 colWidthOfTheSecondDiv="lg:w-8/12"
                 title="Collaboration"
