@@ -23,6 +23,8 @@
   --color-header-search-bg: #545b6b;
   overflow-x: hidden;
   --mktg-accent-primary: #3FB950;
+  --mktg-accent-secondary: #33B3AE;
+  --mktg-accent-third: #33B3AE;
 }
 
 a {
@@ -100,4 +102,12 @@ h1 {
 
 .text-accent-primary {
   color: var(--mktg-accent-primary);
+}
+
+.text-accent-secondary {
+  color: var(--mktg-accent-secondary);
+}
+
+.text-accent-third {
+  color: var(--mktg-accent-third);
 }
