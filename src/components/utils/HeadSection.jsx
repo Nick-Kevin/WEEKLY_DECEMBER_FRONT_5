@@ -13,7 +13,7 @@ function HeadSection (props) {
                         (
                             <div
                                 className="mx-auto w-[2px] md:w-[3px] h-80"
-                                style={{background: `${props.verticalLineColor}`}}
+                                style={{background: `${props.firstVerticalLineColor}`}}
                             >
                             </div>
                         )

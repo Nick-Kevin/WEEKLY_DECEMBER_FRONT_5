@@ -106,8 +106,9 @@ function MainContent () {
                 />
             </div>
             <HeadSection
-                octicon={securityOcticon()}
+                octicon={securityOcticon()}                
                 octiconBgColor="var(--mktg-accent-secondary)"
+                firstVerticalLineColor="linear-gradient(transparent, rgb(51, 179, 174) 60%)"
                 verticalLineColor="linear-gradient(rgb(51, 179, 174) 40%, transparent)"
                 colWidthOfTheSecondDiv="lg:w-7/12"
                 title="Application security"
@@ -170,6 +171,7 @@ function MainContent () {
             <HeadSection
                 octicon={collaborationOcticon()}
                 octiconBgColor="var(--mktg-accent-third)"
+                firstVerticalLineColor="linear-gradient(transparent, rgb(247, 120, 186) 60%)"
                 verticalLineColor="linear-gradient(rgb(247, 120, 186) 40%, transparent)"
                 colWidthOfTheSecondDiv="lg:w-8/12"
                 title="Collaboration"
