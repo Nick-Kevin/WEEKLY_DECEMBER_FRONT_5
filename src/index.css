@@ -88,15 +88,22 @@ h1 {
   }
 }
 
-.reveal {
+.revealY {
   position: relative;
   transform: translateY(250px);
   opacity: 0;
   transition: 2s all ease;
 }
 
-.reveal.active {
-  transform: translateY(0);
+.revealRight {
+  position: relative;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.revealY.active, .revealRight.active {
+  transform: translate(0);
   opacity: 1;
 }
 
