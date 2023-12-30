@@ -39,7 +39,7 @@
   overflow-x: hidden;
   --mktg-accent-primary: #3FB950;
   --mktg-accent-secondary: #33B3AE;
-  --mktg-accent-third: #33B3AE;
+  --mktg-accent-third: #F778BA;
 }
 
 a {
@@ -158,4 +158,8 @@ h1 {
 
 .border-secondary {
   border: 1px solid var(--mktg-accent-secondary);
+}
+
+.border-third {
+  border: 1px solid var(--mktg-accent-third);
 }

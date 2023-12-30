@@ -2,6 +2,7 @@ import HeadSection from "../../utils/HeadSection"
 import Content from "../../utils/Content"
 import branchProductivity from "../../../assets/images/git-branch-productivity-c304b83d09c7.svg"
 import branchSecurity from "../../../assets/images/git-branch-security-2-f6a799957581.svg"
+import branchCollaboration from "../../../assets/images/git-branch-collaboration-2-e46b1fb1d363.svg"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -85,6 +86,19 @@ function MainContent () {
                 titleClassColor="text-accent-third"
                 description1="Supercharge collaboration"
                 description2=" GitHub helps your teams work more efficiently together. "
+            />
+            <Content
+                verticalLineColor="linear-gradient(transparent, #F778BA, #F778BA, transparent)"
+                branchSrc={branchCollaboration}
+                description1="GitHub Issues and GitHub Projects"
+                description2="supply project management tools that adapt to your team alongside your code."
+                firstLink="Get startes with GitHub Issues"
+                secondDivClass="lg:mt-40"
+                title="80x"
+                subtitle="reduction in onboarding time with GitHub2"
+                didYouKnowClass="border-third text-accent-third"
+                textColor="text-accent-third"
+                hiddeSecondLink
             />
         </>        
     )
