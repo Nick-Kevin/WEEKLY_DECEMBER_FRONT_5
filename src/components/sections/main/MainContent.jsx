@@ -1,6 +1,7 @@
 import HeadSection from "../../utils/HeadSection"
 import Content from "../../utils/Content"
 import branchProductivity from "../../../assets/images/git-branch-productivity-c304b83d09c7.svg"
+import branchSecurity from "../../../assets/images/git-branch-security-2-f6a799957581.svg"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -45,9 +46,11 @@ function MainContent () {
                 description1="GitHub Copilot"
                 description2="empowers developers to complete tasks 55% faster with contextualized AI coding assistance across workflows."
                 firstLink="Explore GitHub Copilot"
+                secondDivClass="lg:mt-32"
                 title="22% increase"
                 subtitle="in developer productivity after three years with GitHub"
                 secondLink="Read the report"
+                didYouKnowClass="border-primary text-accent-primary"
                 textColor="text-accent-primary"
             />
             <HeadSection
@@ -59,6 +62,19 @@ function MainContent () {
                 titleClassColor="text-accent-secondary"
                 description1="Empower developers"
                 description2="With GitHub, you can secure code in minutes."
+            />
+            <Content
+                verticalLineColor="linear-gradient(transparent, rgb(51, 179, 174), rgb(51, 179, 174), transparent)"
+                branchSrc={branchSecurity}
+                description1="GitHub Advanced Security"
+                description2="enables you to find and fix vulnerabilities with ease and ship secure code quickly."
+                firstLink="Dive into GitHub Advanced Security"
+                secondDivClass="lg:mt-40"
+                title="7x faster"
+                subtitle="vulnerability fixes with GitHub1"
+                didYouKnowClass="border-secondary text-accent-secondary"
+                textColor="text-accent-secondary"
+                hiddeSecondLink
             />
             <HeadSection
                 octicon={collaborationOcticon()}

@@ -42,11 +42,11 @@ function Content (props) {
                             </div>
                     </RevealOnScroll>
                 </div>
-                <div className='sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 py-3 px-4 mt-20 md:mt-40 lg:mt-32'>
+                <div className={`${ props.secondDivClass} sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 py-3 px-4 mt-20 md:mt-40`}>
                     <SetElementOnScroll>
                         <Fade bottom>
                             <div>
-                                <span className={`${props.textColor} mona-semibold text-xs py-1 px-2 border-primary rounded-xl`}>
+                                <span className={`${props.didYouKnowClass} mona-semibold text-xs py-1 px-2 rounded-xl`}>
                                     Did you know ?
                                 </span>
                             </div>
