@@ -1,3 +1,5 @@
+import RevealOnScroll from "../animations/RevealOnScroll"
+
 function FirstCard (props) {
     const arrowRight = (size) => {
         return (
@@ -22,7 +24,9 @@ function FirstCard (props) {
                 </a>
             </div>
             <div>
-                <img src={props.imgSrc} alt={props.imgAlt} />
+                <RevealOnScroll>
+                    <img src={props.imgSrc} alt={props.imgAlt} />
+                </RevealOnScroll>
             </div>
         </div>
     )
