@@ -11,6 +11,7 @@ import illuPlan from "../../../assets/images/issues-plan-2-46d1ce1d4519.png"
 import FirstCard from "../../utils/FirstCard"
 import illuActions from "../../../assets/images/illu-actions-2-c5178134f381.png"
 import illuCode from "../../../assets/images/illu-code-scanning-fc9dfb212aa3.png"
+import illuSponsors from "../../../assets/images/illu-sponsors.png"
 
 function MainContent () {
     const productivityOcticon = () => {
@@ -151,6 +152,14 @@ function MainContent () {
                 didYouKnowClass="border-third text-accent-third"
                 textColor="text-accent-third"
                 hiddeSecondLink
+            />
+            <FirstCard
+                paddingClass="mt-10 md:pt-0 lg:w-6/12 lg:pt-5 pb-9 sm:pb-12 md:pb-16"
+                description1="Code Sponsors"
+                description2="lets you support your favorite open source maintainers and projects."
+                link="Invest with GitHub Sponsors" 
+                imgSrc={illuSponsors}
+                imgAlt="sponsors illustrations"               
             />
         </>        
     )
