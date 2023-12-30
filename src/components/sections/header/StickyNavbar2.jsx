@@ -129,7 +129,7 @@ export default function StickyNavbar2() {
           </IconButton>
       </div>
       <MobileNav open={openNav}>
-        <div className="fixed z-50 sm:w-80 sm:right-0 top-16 container bg-white ml-5 rounded-tl-md rounded-bl-md mx-auto">
+        <div className="fixed z-50 w-[95%] sm:w-80 right-0 top-16 container bg-white rounded-tl-md rounded-bl-md mx-auto">
           {navList}
           <div className="ml-8 mr-10 mt-20 sm:mt-40 mb-4">
             <button className="w-full flex justify-between rounded-md p-2 bg-header-search">

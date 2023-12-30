@@ -42,7 +42,7 @@ function Content (props) {
                             </div>
                     </RevealOnScroll>
                 </div>
-                <div className={`${ props.secondDivClass} sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 py-3 px-4 mt-20 md:mt-40`}>
+                <div className={`${ props.secondDivClass} sm:w-8/12 md:w-7/12 lg:w-6/12 xl:w-5/12 py-3 px-4 md:mt-40`}>
                     <SetElementOnScroll>
                         <Fade bottom>
                             <div>

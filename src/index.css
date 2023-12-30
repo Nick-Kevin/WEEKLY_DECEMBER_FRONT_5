@@ -36,7 +36,7 @@
   -moz-osx-font-smoothing: grayscale;
   --color-btn-counter-bg: #30363d;
   --color-header-search-bg: #545b6b;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   --mktg-accent-primary: #3FB950;
   --mktg-accent-secondary: #33B3AE;
   --mktg-accent-third: #F778BA;
@@ -55,6 +55,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden !important;
   background-color: var(--default-bg-colol);
 }
 
